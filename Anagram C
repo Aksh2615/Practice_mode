@@ -21,11 +21,13 @@ int main()
           	flag=1;
           	break;
         }
-      else
-      {
-        flag=0;
-      }
+        else
+        {
+        	flag=0;
+        }
     }
+  if(flag==0)
+    break;
   }
   if(flag==1)
     printf("Anagram");
