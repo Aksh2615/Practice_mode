@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
 {
+//Try out your code here
   char str1[10];
   char str2[10];
   char testchar;
@@ -11,19 +12,24 @@ int main()
   for(i=0;i<len;i++)
   {
   	testchar=str2[i];
+    printf("%c\n",testchar);
     for(j=0;j<len;j++)
     {
+      printf("%c\n",str1[j]);
     	if(testchar==str1[j])
         {
           	flag=1;
           	break;
         }
+      else
+      {
+        flag=0;
+      }
     }
   }
   if(flag==1)
     printf("Anagram");
   else
     printf("Not an Anagram");
-  printf("\n%d",flag);
 return 0;
 }
