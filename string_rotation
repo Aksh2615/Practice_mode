@@ -1,0 +1,36 @@
+//C code to rotate a string.
+#include<stdio.h>
+int main()
+{
+  char str1[30];
+  scanf("%s",str1);
+  char str2[30];
+  strcpy(str2,str1);
+  printf("%s\n",str2);
+  int rot;
+  scanf("%d",&rot);
+  char temp;
+  int i,j;
+  int len=strlen(str1);
+  for(i=0;i<rot;i++)
+  {
+    temp=str1[0];
+  	for(j=0;j<len-1;j++)
+    {
+      str1[j]=str1[j+1];
+    }
+    str1[len-1]=temp;
+  }
+  printf("Left rotation: %s\n",str1);
+  for(i=0;i<rot;i++)
+  {
+    temp=str2[len-1];
+  	for(j=(len-1);j>0;j--)
+    {
+      str2[j]=str2[j-1];
+    }
+    str2[0]=temp;
+  }
+  printf("Right rotation: %s",str2);
+return 0;
+}
