@@ -1,0 +1,19 @@
+//Only one for loop to rotate the string.
+#include<stdio.h>
+#include<string.h>
+void main()
+{  
+  int i;
+  char str[20];
+  scanf("%s",str);
+  char temp[20];
+  int str_len = strlen(str);
+  int no_of_rotations;
+  scanf("%d", &no_of_rotations);
+  for(int index = 0; index < str_len; index++)
+  {
+    i = (index + no_of_rotations) % str_len;
+    temp[i] = str[index];
+  }
+  printf("%s",temp);
+}
