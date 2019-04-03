@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+//Try out your code here
+  char str1[10];
+  char str2[10];
+  char testchar;
+  gets(str1);
+  gets(str2);
+  int len=strlen(str1);
+  int i,j,flag=0;
+  for(i=0;i<len;i++)
+  {
+  	testchar=str2[i];
+    for(j=0;j<len;j++)
+    {
+    	if(testchar==str1[j])
+        {
+          	flag=1;
+          	break;
+        }
+    }
+  }
+  if(flag==1)
+    printf("Anagram");
+  else
+    printf("Not an Anagram");
+  printf("\n%d",flag);
+return 0;
+}
