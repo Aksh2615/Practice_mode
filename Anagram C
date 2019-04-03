@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main()
 {
-//Try out your code here
   char str1[10];
   char str2[10];
   char testchar;
