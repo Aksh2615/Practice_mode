@@ -19,8 +19,8 @@
     width: 100%;
   }
 </style>
-<body >
-
+<body style="background-color: #212F3C;margin: 0;padding: 0;">
+ 
 	<nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
@@ -29,7 +29,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.php">CampConnect</a>
+        <a class="navbar-brand" href="home.php"><strong><i>CAMPCONNECT</i></strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -38,7 +38,7 @@
         <li><a href="bought_products.php">BOUGHT PRODUCTS</a></li>
         <li><a href="message.php">MESSAGES</a></li>
         <li><a href="about_us.php">ABOUT US</a></li>
-        <li class="dropdown"><a href="change_password.php" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['email']; ?><span class="caret"></span></a>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['email']; ?><span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="change_password.php">Change Password</a></li>
           <li><a href="logout.php">Logout</a></li>
@@ -48,25 +48,24 @@
     </div>
   </div>
 </nav>
-
 <div class="container">
-  <h2>Change Password</h2>
+  <h2 style="text-align:center; color:white;">Change Password</h2>
   <form class="form-horizontal" action="change_password.php" method="post">
     <br>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="curr_pass">Current Password</label>
+      <label class="control-label col-sm-2" for="curr_pass" style="color:white;">Current Password</label>
       <div class="col-sm-10">
         <input type="password" class="form-control" id="curr_pass" placeholder="Current Password" name="curr_pass" required>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="new_pass">New Password</label>
+      <label class="control-label col-sm-2" for="new_pass" style="color:white;">New Password</label>
       <div class="col-sm-10">
         <input type="password" class="form-control" id="new_pass" placeholder="New Password" name="new_pass" required>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="retype_new_pass">Current Password</label>
+      <label class="control-label col-sm-2" for="retype_new_pass" style="color:white;">Retype New Password</label>
       <div class="col-sm-10">
         <input type="password" class="form-control" id="retype_new_pass" placeholder="Retype New Password" name="retype_new_pass" required>
       </div>
@@ -78,9 +77,7 @@
     </div>
   </form>
 </div>
-<footer class="container-fluid bg-4 text-center">
-  <p>@ 2018 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh</p> 
-</footer>
+
 
 <?php
    $email_id = $_SESSION['email'];
@@ -114,3 +111,6 @@
 
 }
 ?>
+    <footer class="container-fluid bg-4 text-center">
+  <p>@ 2019 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh & Ashita Aggarwal</p> 
+</footer>

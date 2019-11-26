@@ -6,6 +6,7 @@
 <head>
 	<title>Post Mobile Ad</title>
 	<link rel="stylesheet" type="text/css" href="css/advertise.css">
+    <link rel="stylesheet" type="text/css" href="css/footerf.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -15,8 +16,8 @@
     color: white;
   }
 </style>
-<body style="background-color: #212F3C;">
-
+<body style="background-color: #212F3C;margin: 0;padding: 0;">
+ 
 	<nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
@@ -25,7 +26,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.php">CampConnect</a>
+        <a class="navbar-brand" href="home.php"><strong><i>CAMPCONNECT</i></strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -117,7 +118,7 @@
       </div>
     </div>
   </form>
-</div>
+    </div>
 
 </body>
 
@@ -166,7 +167,19 @@
             }
             else{
                   echo "<script type='text/javascript'>alert('Failed! Please try again')</script>";
-            } 
+            }
+          $message1 = "Checkout the latest Mobile advertisement on CampConnet ny me...!!";
+            $query4 = "SELECT * FROM users";
+            $result4 = mysqli_query($db,$query4);
+          
+            while($row = mysqli_fetch_array($result4)){
+                
+                $reciv = $row[0];
+                if($reciv == $owner_email)
+                    continue;
+                $query5 = "INSERT INTO Messages (sender_id,receiver_id,message) VALUES ('$owner_email','$reciv','$message1')";
+                $result5 = mysqli_query($db,$query5);
+            }
 
       }else{
         echo "<script type='text/javascript'>alert('Failed! Please try again')</script>";
@@ -176,3 +189,6 @@
 
 
 ?>
+    <footer class="container-fluid bg-4 text-center">
+  <p>@ 2019 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh & Ashita Aggarwal</p> 
+</footer>

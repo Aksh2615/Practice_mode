@@ -5,6 +5,7 @@
  <meta charset="utf-8">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
   <!--<header class="login_h">
@@ -47,7 +48,6 @@
         <div class="col-md-4 col-sm-4 col-xs-12"></div>
 	</div>
 </div>
-
 <?php
   //$db = mysqli_connect('localhost','root','password','olx_schema');
    require('inc/config.php');
@@ -68,3 +68,6 @@
      }
    }
 ?>
+    <footer class="container-fluid bg-4 text-center">
+  <p>@ 2019 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh & Ashita Aggarwal</p> 
+</footer>

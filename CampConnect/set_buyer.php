@@ -23,7 +23,7 @@
     width: 100%;
   }
 </style>
-<body>
+<body style="background-color: #212F3C;margin: 0;padding: 0;">
  
 	<nav class="navbar navbar-inverse">
   <div class="container">
@@ -33,7 +33,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.php">CampConnect</a>
+        <a class="navbar-brand" href="home.php"><strong><i>CAMPCONNECT</i></strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -54,16 +54,16 @@
 </nav>
 
 <div class="container">
-  <h2>Product Sold</h2>
+  <h2 style="text-align:center; color:white;">Product Sold</h2>
   <form class="form-horizontal" action="set_buyer.php" method="post">
     <div class="form-group">
-      <label class="control-label col-sm-3" for="advt_id">Advertisement ID</label>
+      <label class="control-label col-sm-3" for="advt_id" style="color:white;">Advertisement ID</label>
       <div class="col-sm-9">
         <input type="number" class="form-control" id="advt_id" placeholder="Advertisement ID" name="advt_id" required>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-3" for="product_name">Buyer Registered Email Id:</label>
+      <label class="control-label col-sm-3" for="product_name" style="color:white;">Buyer Registered Email Id:</label>
       <div class="col-sm-9">
         <input type="email" class="form-control" id="buyer_email" placeholder="Email Id" name="buyer_email" required>
       </div>
@@ -75,9 +75,6 @@
     </div>
 </form>
 </div>
-<footer class="container-fluid bg-4 text-center">
-  <p>@ 2018 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh</p> 
-</footer>
 
 <?php
 
@@ -105,3 +102,7 @@ if(isset($_POST['submit'])){
 }
 
 ?>
+
+<footer class="container-fluid bg-4 text-center">
+  <p>@ 2019 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh & Ashita Aggarwal</p> 
+</footer>

@@ -23,9 +23,9 @@
     width: 100%;
   }
 </style>
-<body>
-
-<nav class="navbar navbar-inverse">
+<body style="background-color: #212F3C;margin: 0;padding: 0;">
+ 
+	<nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -33,14 +33,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.php">CampConnect</a>
+        <a class="navbar-brand" href="home.php"><strong><i>CAMPCONNECT</i></strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="home.php">HOME</a></li>
         <li><a href="my_products.php">MY PRODUCTS</a></li>
         <li><a href="bought_products.php">BOUGHT PRODUCTS</a></li>
-        <li><a href="message.php">MESSAGES</a></li>
+        <li><a href="message.php" >MESSAGES</a></li>
         <li><a href="about_us.php">ABOUT US</a></li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['email']; ?><span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -53,17 +53,18 @@
   </div>
 </nav>
 
+
 <div class="container">
-  <h2>Send Messages</h2>
+  <h2 style="text-align:center; color:white;">Send Messages</h2>
   <form class="form-horizontal" action="send_message.php" method="post">
     <div class="form-group">
-      <label class="control-label col-sm-2" for="advt_id">Email ID :</label>
+      <label class="control-label col-sm-2" for="advt_id" style="color:white;">Email ID :</label>
       <div class="col-sm-10">
         <input type="email" class="form-control" id="email_id" placeholder="Email ID of Receiver" name="email_id" required>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2 " for="msg">Message description</label>
+      <label class="control-label col-sm-2 " for="msg" style="color:white;">Message description</label>
       <div class="col-sm-10">          
         <textarea class="form-control" id="msg" placeholder="Message description" name="msg"></textarea>  
       </div>
@@ -75,10 +76,6 @@
     </div>
 </form>
 </div>
-<footer class="container-fluid bg-4 text-center">
-  <p>@ 2018 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh</p> 
-</footer>
-
 
 <?php
   $email_id = $_SESSION['email'];
@@ -99,3 +96,8 @@
     }
   }
 ?>
+
+
+<footer class="container-fluid bg-4 text-center">
+  <p>@ 2019 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh & Ashita Aggarwal</p> 
+</footer>

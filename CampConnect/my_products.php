@@ -5,16 +5,15 @@
 <html>
 <head>
 	<title>My Products</title>
-	
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
   <link rel="stylesheet" type="text/css" href="css/advertise.css">
 	<link rel="stylesheet" type="text/css" href="css/purchase.css">
 </head>
-<body style="background-color: #212F3C;">
+<body style="background-color: #212F3C;margin: 0;padding: 0;">
  
 	<nav class="navbar navbar-inverse">
   <div class="container">
@@ -24,12 +23,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.php">CampConnect</a>
+        <a class="navbar-brand" href="home.php"><strong><i>CAMPCONNECT</i></strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="home.php">HOME</a></li>
-        <li><a href="my_products.php">MY PRODUCTS</a></li>
+        <li class="active"><a href="my_products.php">MY PRODUCTS</a></li>
         <li><a href="bought_products.php">BOUGHT PRODUCTS</a></li>
         <li><a href="message.php">MESSAGES</a></li>
         <li><a href="about_us.php">ABOUT US</a></li>
@@ -127,8 +126,7 @@ while ($row = mysqli_fetch_assoc($result)) {
             </div>
             <div class="col-md-1"></div>
             <!--<?php $_SESSION['ad_id']=$id; ?>-->        
-           <!-- <a href="set_buyer.php?id=<?php echo $row["advt_id"]; ?>"><button type="submit" id="sold" name="sold" class="btn btn-primary">SOLD</button></a>-->
-                   
+           <!-- <a href="set_buyer.php?id=<?php echo $row["advt_id"]; ?>"><button type="submit" id="sold" name="sold" class="btn btn-primary">SOLD</button></a>--> 
         </div>
         
 </div>
@@ -301,13 +299,15 @@ while ($row = mysqli_fetch_assoc($result)) {
     }
   }
   ?>
- <a href="set_buyer.php"><center><button style="width: 50%;" type="submit" id="sold" name="sold" class="btn btn-primary" >CLICK TO ADD SOLD ITEMS</button></center></a>	
- <br>	
+
+    <a href="set_buyer.php"><center><button style="width: 50%;" type="submit" id="sold" name="sold" class="btn btn-primary" >CLICK TO ADD SELL ITEMS</button></center></a>
+    <br>
+<a href="del.php"><center><button type="submit" id="submit" name="submit" style="width: 50%;" type="submit" id="sold" name="sold" class="btn btn-primary">CLICK TO DELETE ITEMS</button></center></a>
  <br>
 
 
 <footer class="container-fluid bg-4 text-center">
-  <p>@ 2018 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh</p> 
+  <p>@ 2019 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh & Ashita Aggarwal</p> 
 </footer>
 
 

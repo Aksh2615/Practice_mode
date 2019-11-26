@@ -6,6 +6,7 @@
 <head>
 	<title>Laptop Purchase</title>
 	
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -14,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/advertise.css">
 	<link rel="stylesheet" type="text/css" href="css/purchase.css">
 </head>
-<body style="background-color: #212F3C;">
+<body style="background-color: #212F3C;margin: 0;padding: 0;">
  
 	<nav class="navbar navbar-inverse">
   <div class="container">
@@ -24,7 +25,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.php">CampConnect</a>
+        <a class="navbar-brand" href="home.php"><strong><i>CAMPCONNECT</i></strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -43,6 +44,7 @@
     </div>
   </div>
 </nav>
+
 
 <!-- Side navigation -->
 <div class="sidenav">
@@ -130,5 +132,5 @@ while ($row = mysqli_fetch_assoc($result)) {
 </body>
 
 <footer class="container-fluid bg-4 text-center">
-  <p>@ 2018 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh</p> 
+  <p>@ 2019 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh & Ashita Aggarwal</p> 
 </footer>

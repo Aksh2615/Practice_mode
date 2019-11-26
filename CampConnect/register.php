@@ -1,6 +1,7 @@
 
 <head>
  <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="css/footer.css">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
@@ -18,17 +19,17 @@
   </div>
   <div class="form-group">
     <label for="mob_no">Mobile Number</label>
-    <input type="number" class="form-control" id="mob_no" name="mob_no" placeholder="Mobile Number" required>
+    <input type="text" class="form-control" id="mob_no" name="mob_no" placeholder="Mobile Number" required>
   </div>
   <div class="form-group">
     <label for="user_type">User type</label>
   </div>
   <div class="form-group">
     <select class="form-control" id='user_type' name='user_type'>
-      <option value="0">Select</option>
-      <option value="Student">Student</option>
-      <option value="Staff">Staff</option>
-      <option value="Faculty">Faculty</option>
+      <option value="0" style="color:black;">Select</option>
+      <option value="Student" style="color:black;" >Student</option>
+      <option value="Staff" style="color:black;">Staff</option>
+      <option value="Faculty" style="color:black;">Faculty</option>
     </select>
   </div>
   <div class="form-group">
@@ -76,6 +77,7 @@ if(isset($_POST['submit'])){
   echo '$result';
   if($result){
     echo "<script type='text/javascript'>alert('Submitted Successfully!!!')</script>";
+      header('location: login.php');
   }
   else{
    echo "<script type='text/javascript'>alert('Registration Failed. Please try again')</script>"; 
@@ -85,5 +87,7 @@ if(isset($_POST['submit'])){
 
 
 ?>
-
+<footer class="container-fluid bg-4 text-center">
+  <p>@ 2019 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh & Ashita Aggarwal</p> 
+</footer>
 </body>

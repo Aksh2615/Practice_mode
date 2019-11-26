@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/advertise.css">
 	<link rel="stylesheet" type="text/css" href="css/purchase.css">
 </head>
-<body style="background-color: #212F3C;">
+<body style="background-color: #212F3C;margin: 0;padding: 0;">
  
 	<nav class="navbar navbar-inverse">
   <div class="container">
@@ -24,13 +24,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.php">CampConnect</a>
+        <a class="navbar-brand" href="home.php"><strong><i>CAMPCONNECT</i></strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="home.php">HOME</a></li>
         <li><a href="my_products.php">MY PRODUCTS</a></li>
-        <li><a href="bought_products.php">BOUGHT PRODUCTS</a></li>
+        <li class="active"><a href="bought_products.php">BOUGHT PRODUCTS</a></li>
         <li><a href="message.php">MESSAGES</a></li>
         <li><a href="about_us.php">ABOUT US</a></li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['email']; ?><span class="caret"></span></a>
@@ -286,7 +286,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 
 <footer class="container-fluid bg-4 text-center">
-  <p>@ 2018 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singhr</p> 
+  <p>@ 2019 Copyright: <a href="home.php">www.CampConnect.com </a>| Designed by Anand Kumar Singh & Ashita Aggarwal</p> 
 </footer>
 
 
