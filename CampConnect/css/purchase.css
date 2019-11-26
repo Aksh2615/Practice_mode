@@ -47,6 +47,8 @@ body {
 
 .lib-panel {
     margin-bottom: 20px;
+    margin-left: 220px;
+    margin-right: -80px;
 }
 .lib-panel img {
     width: 100%;
